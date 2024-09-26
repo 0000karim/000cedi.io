@@ -1,0 +1,62 @@
+
+
+.members-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.member-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    max-width: 300px;
+    text-align: center;
+    overflow: hidden;
+    flex: 1;
+}
+
+.member-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+.member-card h3 {
+    margin: 15px 0 5px;
+    font-size: 1.5em;
+}
+
+.member-card p {
+    padding: 0 15px;
+    font-size: 1em;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .members-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member-card {
+        max-width: 90%;
+    }
+}
